@@ -2,109 +2,201 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>F8 Project 01</title>
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
 
-    <!-- <link rel="stylesheet" href="./assets/fonts/stylesheet.css" /> -->
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+
+    <!-- Embed fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+
+    <!-- Styles -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body>
-    <main>
-      <!-- Header -->
-      <header class="header">
-        <div class="content">
-          <nav class="navbar">
-            <!-- Logo -->
-            <img src="./assets/img/logo.svg" alt="Besnik." />
-            <!-- Navigation -->
-            <ul>
-              <li><a href="#!">Home</a></li>
-              <li><a href="#!">Features</a></li>
-              <li><a href="#!">Services</a></li>
-              <li><a href="#!">Listed</a></li>
-              <li><a href="#!">Contact</a></li>
-            </ul>
-            <!-- Action -->
-            <div class="actions">
-              <a href="#!" class="actions-link">Sign in</a>
-              <a href="#!" class="btn acction-btn">Register</a>
-            </div>
-          </nav>
+    <!-- PC header -->
+    <header class="fixed-header">
+      <div class="content">
+        <!-- Navbar -->
+        <nav class="navbar">
+          <!-- Logo -->
+          <a href="#">
+            <img class="logo" src="./assets/img/logo.svg" alt="Besnik." />
+          </a>
 
-          <div class="hero">
-            <div class="info">
-              <p class="sub-title">Welcome to Besnik Agency</p>
-              <h1 class="title">Discover a place you'll love to live.</h1>
-              <p class="desc">
-                Get the best real estate deals first, before they hit the mass
-                market! HOT FORECLOSURE DEALS with one simple search
-              </p>
-              <a href="#!" class="btn hero-cta">More About Us</a>
-            </div>
+          <!-- Navigation -->
+          <ul id="pc-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="show-on-mobile separate">
+              <a href="#!">Sign in</a>
+            </li>
+            <li class="show-on-mobile"><a href="#!">Sign up</a></li>
+          </ul>
 
-            <img
-              src="./assets/img/hero-img.svg"
-              alt="Discover a place you'll love to live."
-              class="hero-img"
-            />
+          <!-- Action -->
+          <div class="actions">
+            <a href="#!" class="action-link">Sign in</a>
+            <a href="#!" class="btn action-btn">Sign up</a>
           </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <div class="hero-wrap">
+        <div class="content">
+          <div class="info">
+            <p class="sub-title">Welcome to Besnik Agency</p>
+            <h1 class="title">Discover a place you'll love to live.</h1>
+            <p class="desc">
+              Get the best real estate deals first, before they hit the mass
+              market! HOT FORECLOSURE DEALS with one simple search
+            </p>
+            <a href="#!" class="btn hero-cta">More About Us</a>
+          </div>
+
+          <img
+            src="./assets/img/hero-img.svg"
+            alt="Discover a place you'll love to live."
+            class="hero-img"
+          />
         </div>
-      </header>
+      </div>
 
       <!-- Clients -->
       <div class="clients">
         <div class="content">
           <div class="row">
-            <!--  Logo -->
+            <!-- Logo -->
             <img src="./assets/img/logo.svg" alt="Besnik." />
+
             <!-- Stars -->
             <div class="stars">
-              <img src="./assets/img/stars.svg" alt="Stars" />
-              <img src="./assets/img/stars.svg" alt="Stars" />
-              <img src="./assets/img/stars.svg" alt="Stars" />
-              <img src="./assets/img/stars.svg" alt="Stars" />
-              <img src="./assets/img/stars.svg" alt="Stars" />
+              <img src="./assets/img/star.svg" alt="Star" />
+              <img src="./assets/img/star.svg" alt="Star" />
+              <img src="./assets/img/star.svg" alt="Star" />
+              <img src="./assets/img/star.svg" alt="Star" />
+              <img src="./assets/img/star.svg" alt="Star" />
             </div>
           </div>
           <div class="row row-desc">
             <p class="desc">More than 45,000+ companies trust besnik</p>
-            <p class="desc">5 Star Ratings (2k+ Review)</p>
+            <p class="desc hide-on-mobile">5 Star Ratings (2k+ Review)</p>
           </div>
-          <div class="row images">
+          <div class="images">
             <a href="#!">
-              <img src="./assets/img/client-1.svg" alt="Client-1" />
+              <img src="./assets/img/client-1.svg" alt="Client 1" />
             </a>
             <a href="#!">
-              <img src="./assets/img/client-2.svg" alt="Client-2" />
+              <img src="./assets/img/client-2.svg" alt="Client 2" />
             </a>
             <a href="#!">
-              <img src="./assets/img/client-3.svg" alt="Client-3" />
+              <img src="./assets/img/client-3.svg" alt="Client 3" />
             </a>
             <a href="#!">
-              <img src="./assets/img/client-4.svg" alt="Client-4" />
+              <img src="./assets/img/client-4.svg" alt="Client 4" />
             </a>
             <a href="#!">
-              <img src="./assets/img/client-5.svg" alt="Client-5" />
+              <img src="./assets/img/client-5.svg" alt="Client 5" />
             </a>
           </div>
         </div>
       </div>
 
       <!-- Guides -->
-      <div class="guides">
+      <div id="services" class="guides">
         <div class="content">
           <h2 class="sub-title">How its works?</h2>
           <p class="desc">
@@ -112,65 +204,53 @@
             sell - all in one place.
           </p>
 
-          <!-- List Guide -->
-
+          <!-- List guide -->
           <ul class="list-guide">
             <li class="guide-item">
-              <img
-                src="./assets/img/guide-01.svg"
-                alt="Guide-01"
-                class="icon"
-              />
-              <h3 class="title">Seller Guides</h3>
+              <img src="./assets/img/buyer.svg" alt="Buyer" class="icon" />
+              <h3 class="title">Buyer Guides</h3>
               <a href="#!" class="link">
                 <span>How to buy</span>
                 <img
-                  src="./assets/img/Guide(mt).svg"
-                  alt="Guide(mt)"
+                  src="./assets/img/arrow-right.svg"
+                  alt="Arrow right"
                   class="arrow"
                 />
               </a>
             </li>
             <li class="guide-item">
-              <img
-                src="./assets/img/guide-02.svg"
-                alt="Guide-02"
-                class="icon"
-              />
+              <img src="./assets/img/renter.svg" alt="Renter" class="icon" />
               <h3 class="title">Renter Guides</h3>
               <a href="#!" class="link">
                 <span>How to rent</span>
                 <img
-                  src="./assets/img/Guide(mt).svg"
-                  alt="Guide(mt)"
+                  src="./assets/img/arrow-right.svg"
+                  alt="Arrow right"
                   class="arrow"
                 />
               </a>
             </li>
             <li class="guide-item">
-              <img
-                src="./assets/img/guide-03.svg"
-                alt="Guide-03"
-                class="icon"
-              />
+              <img src="./assets/img/seller.svg" alt="Seller" class="icon" />
               <h3 class="title">Seller Guides</h3>
               <a href="#!" class="link">
                 <span>How to sell</span>
                 <img
-                  src="./assets/img/Guide(mt).svg"
-                  alt="Guide(mt)"
+                  src="./assets/img/arrow-right.svg"
+                  alt="Arrow right"
                   class="arrow"
                 />
               </a>
             </li>
           </ul>
+
           <div class="guide-cta">
-            <a href="" class="btn">Sell Full Guidelines</a>
+            <a href="#!" class="btn">Sell Full Guidelines</a>
           </div>
         </div>
       </div>
 
-      <!-- Features -->
+      <!-- Featured -->
       <div id="features" class="featured">
         <div class="content">
           <header>
@@ -181,126 +261,127 @@
               </p>
               <a href="#!" class="link">
                 <span>View All Properties</span>
-                <img src="./assets/img/Guide(mt).svg" alt="MT" class="arrow" />
+                <img
+                  src="./assets/img/arrow-right.svg"
+                  alt="Arrow right"
+                  class="arrow"
+                />
               </a>
             </div>
-            <!-- Item 1 -->
           </header>
-          <div class="list-feature">
-            <div class="feature-item">
+
+          <div class="list">
+            <!-- Featured item 1 -->
+            <div class="item">
               <a href="#!">
                 <img
-                  src="./assets/img/house-01.svg"
+                  src="./assets/img/featured-1.jpg"
                   alt="Nikko Apartments"
                   class="thumb"
                 />
               </a>
               <div class="body">
-                <h3 class="title"><a href="#!">Nikko Apartments</a></h3>
+                <h3 class="title">
+                  <a href="#!">Nikko Apartments</a>
+                </h3>
                 <p class="desc">8502 Preston Rd. Inglewood, Maine 98280</p>
                 <div class="info">
-                  <div class="label">
-                    <img src="./assets/img/bed-icon.svg" alt="" />
-                    <span>5 Beds</span>
-                  </div>
-                  <div class="label">
-                    <img src="./assets/img/both-icon.svg" alt="" />
-                    <span> 2 both</span>
-                  </div>
-                  <div class="label">
-                    <img src="./assets/img/sqft-icon.svg" alt="" />
-                    <span> 2000 Sqft</span>
-                  </div>
+                  <img src="./assets/img/beds.svg" alt="" class="icon" />
+                  <span class="label">5 Beds</span>
+
+                  <img src="./assets/img/both.svg" alt="" class="icon" />
+                  <span class="label">2 both</span>
+
+                  <img src="./assets/img/sqft.svg" alt="" class="icon" />
+                  <span class="label">2000 Sqft</span>
                 </div>
               </div>
             </div>
 
-            <!-- Item 2 -->
-
-            <div class="feature-item">
+            <!-- Featured item 2 -->
+            <div class="item">
               <a href="#!">
                 <img
-                  src="./assets/img/house-02.svg"
+                  src="./assets/img/featured-2.jpg"
                   alt="CouCou Homestead"
                   class="thumb"
                 />
               </a>
               <div class="body">
                 <h3 class="title">
-                  <a href="#!">CouCou Homestead</a>
+                  <a href="#!" class="line-clamp">CouCou Homestead</a>
                 </h3>
                 <p class="desc line-clamp" style="--line-clamp: 3">
-                  <!-- <p class="desc line-clamp" style="--line-clamp:3 ;"></p> -->
                   8502 Preston Rd. Inglewood, Maine 98280
                 </p>
                 <div class="info">
-                  <div class="label">
-                    <img src="./assets/img/bed-icon.svg" alt="" />
-                    <span>5 Beds</span>
-                  </div>
-                  <div class="label">
-                    <img src="./assets/img/both-icon.svg" alt="" />
-                    <span>2 both</span>
-                  </div>
-                  <div class="label">
-                    <img src="./assets/img/sqft-icon.svg" alt="" />
-                    <span>2000 Sqft</span>
-                  </div>
+                  <img src="./assets/img/beds.svg" alt="" class="icon" />
+                  <span class="label">5 Beds</span>
+
+                  <img src="./assets/img/both.svg" alt="" class="icon" />
+                  <span class="label">2 both</span>
+
+                  <img src="./assets/img/sqft.svg" alt="" class="icon" />
+                  <span class="label">2000 Sqft</span>
                 </div>
               </div>
             </div>
-            <!-- Item 3 -->
-            <div class="feature-item">
+
+            <!-- Featured item 3 -->
+            <div class="item">
               <a href="#!">
                 <img
-                  src="./assets/img/house-03.svg"
-                  alt="Lavis 18 Residence"
+                  src="./assets/img/featured-3.jpg"
+                  alt="CouCou Homestead"
                   class="thumb"
                 />
               </a>
               <div class="body">
-                <h3 class="title"><a href="#!">Lavis 18 Residence</a></h3>
+                <h3 class="title">
+                  <a href="#!">Lavis 18 Residence</a>
+                </h3>
                 <p class="desc">8502 Preston Rd. Inglewood, Maine 98280</p>
                 <div class="info">
-                  <div class="label">
-                    <img src="./assets/img/bed-icon.svg" alt="" />
-                    <span>5 Beds</span>
-                  </div>
-                  <div class="label">
-                    <img src="./assets/img/both-icon.svg" alt="" />
-                    <span>2 both</span>
-                  </div>
-                  <div class="label">
-                    <img src="./assets/img/sqft-icon.svg" alt="" />
-                    <span>2000 Sqft</span>
-                  </div>
+                  <img src="./assets/img/beds.svg" alt="" class="icon" />
+                  <span class="label">5 Beds</span>
+
+                  <img src="./assets/img/both.svg" alt="" class="icon" />
+                  <span class="label">2 both</span>
+
+                  <img src="./assets/img/sqft.svg" alt="" class="icon" />
+                  <span class="label">2000 Sqft</span>
                 </div>
               </div>
             </div>
+          </div>
+
+          <div class="view-all show-on-mobile">
+            <a href="#!" class="btn">View All Properties</a>
           </div>
         </div>
       </div>
 
       <!-- Stats -->
-      <div class="stats">
+      <div id="resources" class="stats">
         <div class="content">
           <div class="row">
             <div class="img-block">
               <img
                 class="image"
-                src="data:image/jpeg;base64,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"
+                src="./assets/img/stats-img.jpg"
                 alt="You’ve found a neighborhood you love."
               />
+
               <!-- Trend -->
               <div class="stats-trend">
-                <row>
+                <div class="row">
                   <strong class="value">40,000+</strong>
                   <img
-                    src="./assets/img/trendup.svg"
-                    alt="mui ten di len"
+                    src="./assets/img/arrow-trend-up.svg"
+                    alt=""
                     class="icon"
                   />
-                </row>
+                </div>
                 <p class="desc">
                   By avarage for 2 bedroom apments in San Francisco, CA
                 </p>
@@ -308,110 +389,88 @@
                 <div class="avatar-block">
                   <div class="avatar-group">
                     <img
-                      src="./assets/img/avartar-01.jpg"
-                      alt="avartar"
-                      class="avartar"
+                      src="./assets/img/avatar-1.jpg"
+                      alt=""
+                      class="avatar"
                     />
                     <img
-                      src="./assets/img/avartar-02.jpg"
-                      alt="avartar"
-                      class="avartar"
+                      src="./assets/img/avatar-2.jpg"
+                      alt=""
+                      class="avatar"
                     />
                   </div>
                   <div class="avatar-group">
                     <img
-                      src="./assets/img/avartar-06.jpg"
-                      alt="avartar"
-                      class="avartar"
+                      src="./assets/img/avatar-3.jpg"
+                      alt=""
+                      class="avatar"
                     />
                     <img
-                      src="./assets/img/avartar-03.jpg"
-                      alt="avartar"
-                      class="avartar"
+                      src="./assets/img/avatar-4.webp"
+                      alt=""
+                      class="avatar"
                     />
                     <img
-                      src="./assets/img/avartar-04.jpg"
-                      alt="avartar"
-                      class="avartar"
+                      src="./assets/img/avatar-5.jpg"
+                      alt=""
+                      class="avatar"
                     />
-                    <div class="avartar" style="--bg-color: blue">
-                      <spam>H</spam>
-                    </div>
+                    <div class="avatar" style="--bg-color: #1f3bb1">R</div>
+                  </div>
+                  <div class="avatar-group">
+                    <div class="avatar" style="--bg-color: #24d6d9">FJ</div>
+                    <img
+                      src="./assets/img/avatar-6.jpg"
+                      alt=""
+                      class="avatar"
+                    />
+                    <div class="avatar" style="--bg-color: #f8c120">S</div>
                   </div>
                   <div class="avatar-group">
                     <img
-                      src="./assets/img/avartar-05.jpg"
-                      alt="avartar"
-                      class="avartar"
+                      src="./assets/img/avatar-7.jpeg"
+                      alt=""
+                      class="avatar"
                     />
                     <img
-                      src="./assets/img/avartar-06.jpg"
-                      alt="avartar"
-                      class="avartar"
+                      src="./assets/img/avatar-8.jpg"
+                      alt=""
+                      class="avatar"
                     />
                     <img
-                      src="./assets/img/avartar-04.jpg"
-                      alt="avartar"
-                      class="avartar"
+                      src="./assets/img/avatar-9.jpg"
+                      alt=""
+                      class="avatar"
                     />
+                    <div class="avatar" style="--bg-color: #f97f6b">JJ</div>
                   </div>
                   <div class="avatar-group">
                     <img
-                      src="./assets/img/avartar-01.jpg"
-                      alt="avartar"
-                      class="avartar"
+                      src="./assets/img/avatar-10.jpg"
+                      alt=""
+                      class="avatar"
                     />
-                    <img
-                      src="./assets/img/avartar-02.jpg"
-                      alt="avartar"
-                      class="avartar"
-                    />
-                    <img
-                      src="./assets/img/avartar-04.jpg"
-                      alt="avartar"
-                      class="avartar"
-                    />
-                    <img
-                      src="./assets/img/avartar-03.jpg"
-                      alt="avartar"
-                      class="avartar"
-                    />
+                    <div class="avatar" style="--bg-color: #73a242">QV</div>
                   </div>
                   <div class="avatar-group">
                     <img
-                      src="./assets/img/avartar-06.jpg"
-                      alt="avartar"
-                      class="avartar"
+                      src="./assets/img/avatar-11.jpg"
+                      alt=""
+                      class="avatar"
                     />
                     <img
-                      src="./assets/img/avartar-05.jpg"
-                      alt="avartar"
-                      class="avartar"
+                      src="./assets/img/avatar-12.jpg"
+                      alt=""
+                      class="avatar"
                     />
                   </div>
                   <div class="avatar-group">
                     <img
-                      src="./assets/img/avartar-01.jpg"
-                      alt="avartar"
-                      class="avartar"
+                      src="./assets/img/avatar-13.jfif"
+                      alt=""
+                      class="avatar"
                     />
-                    <img
-                      src="./assets/img/avartar-02.jpg"
-                      alt="avartar"
-                      class="avartar"
-                    />
-                  </div>
-                  <div class="avatar-group">
-                    <img
-                      src="./assets/img/avartar-02.jpg"
-                      alt="avartar"
-                      class="avartar"
-                    />
-                    <img
-                      src="./assets/img/avartar-06.jpg"
-                      alt="avartar"
-                      class="avartar"
-                    />
+                    <div class="avatar" style="--bg-color: #1f3bb0">UI</div>
                   </div>
                 </div>
               </div>
@@ -441,102 +500,121 @@
           </div>
         </div>
       </div>
+
       <!-- Subscription -->
-      <div class="subscription">
+      <div id="contact" class="subscription">
         <div class="content">
           <div class="body">
             <div class="info">
-              <h2 class="sub-title">Subscribe to our Newsletter!</h2>
-              <p class="desc">Subscribe to our newsletter and stay updated.</p>
-              <a href="" class="btn">Subscribe</a>
+              <h2 class="sub-title line-clamp">Subscribe to our Newsletter!</h2>
+              <p class="desc line-clamp" style="--line-clamp: 3">
+                Subscribe to our newsletter and stay updated.
+              </p>
+              <a href="#!" class="btn">Subscribe</a>
             </div>
             <img
-              src="./assets/img/subscription.svg"
-              alt="subscription"
+              src="./assets/img/newletter.svg"
+              alt="Subscribe to our Newsletter!"
               class="image"
             />
           </div>
         </div>
       </div>
-      <!-- Footer -->
-      <footer class="footer">
-        <div class="content">
-          <div class="row row-top">
-            <div class="column">
-              <h3 class="heading">Product</h3>
-              <ul class="list">
-                <li class="item">
-                  <a href="">Listing</a>
-                </li>
-                <li class="item">
-                  <a href="">Property</a>
-                </li>
-                <li class="item">
-                  <a href="">Agents</a>
-                </li>
-                <li class="item">
-                  <a href="">Blog</a>
-                </li>
-              </ul>
-            </div>
-            <div class="column">
-              <h3 class="heading">Resources</h3>
-              <ul class="list">
-                <li class="item">
-                  <a href="">Our Homes</a>
-                </li>
-                <li class="item">
-                  <a href="">Member Stories</a>
-                </li>
-                <li class="item">
-                  <a href="">Video</a>
-                </li>
-                <li class="item">
-                  <a href="">Free trial</a>
-                </li>
-              </ul>
-            </div>
-            <div class="column">
-              <h3 class="heading">Company</h3>
-              <ul class="list">
-                <li class="item">
-                  <a href="">Patnerships</a>
-                </li>
-                <li class="item">
-                  <a href="">Terms of use</a>
-                </li>
-                <li class="item">
-                  <a href="">Privacy</a>
-                </li>
-                <li class="item">
-                  <a href="">Sitemap</a>
-                </li>
-              </ul>
-            </div>
-            <div class="column">
-              <h3 class="heading">Get in touch</h3>
-              <p class="desc">
-                You’ll find your next home, in any style you prefer.
-              </p>
-              <div class="social">
-                <a href="" class="social-link">
-                  <img src="./assets/img/icon-03.svg" alt="icon-01" />
-                </a>
-                <a href="" class="social-link">
-                  <img src="./assets/img/icon-02.svg" alt="icon-02" />
-                </a>
-                <a href="" class="social-link">
-                  <img src="./assets/img/icon-01.svg" alt="icon-03" />
-                </a>
-              </div>
-            </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="content">
+        <div class="row row-top">
+          <!-- Product column -->
+          <div class="column">
+            <h3 class="heading">Product</h3>
+            <ul class="list">
+              <li class="item">
+                <a href="#!">Listing</a>
+              </li>
+              <li class="item">
+                <a href="#!">Property</a>
+              </li>
+              <li class="item">
+                <a href="#!">Agents</a>
+              </li>
+              <li class="item">
+                <a href="#!">Blog</a>
+              </li>
+            </ul>
           </div>
-          <div class="row row-bottom">
-            <img src="./assets/img/logo.svg" alt="Besnik." class="logo" />
-            <p class="copyright">Copyright 2020.com, All rights reserved.</p>
+
+          <!-- Resources column -->
+          <div class="column">
+            <h3 class="heading">Resources</h3>
+            <ul class="list">
+              <li class="item">
+                <a href="#!">Our Homes</a>
+              </li>
+              <li class="item">
+                <a href="#!">Member Stories</a>
+              </li>
+              <li class="item">
+                <a href="#!">Video</a>
+              </li>
+              <li class="item">
+                <a href="#!">Free trial</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Company column -->
+          <div class="column">
+            <h3 class="heading">Company</h3>
+            <ul class="list">
+              <li class="item">
+                <a href="#!">Patnerships</a>
+              </li>
+              <li class="item">
+                <a href="#!">Terms of use</a>
+              </li>
+              <li class="item">
+                <a href="#!">Privacy</a>
+              </li>
+              <li class="item">
+                <a href="#!">Sitemap</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Get in touch column -->
+          <div class="column">
+            <h3 class="heading">Get in touch</h3>
+            <p class="desc">
+              You’ll find your next home, in any style you prefer.
+            </p>
+            <div class="social">
+              <a href="#!" class="social-link">
+                <img src="./assets/img/facebook.svg" alt="" />
+              </a>
+              <a href="#!" class="social-link">
+                <img src="./assets/img/twitter.svg" alt="" />
+              </a>
+              <a href="#!" class="social-link">
+                <img src="./assets/img/linkedin.svg" alt="" />
+              </a>
+            </div>
           </div>
         </div>
-      </footer>
-    </main>
+        <div class="row row-bottom">
+          <img src="./assets/img/logo.svg" alt="Besnik." class="logo" />
+          <p class="copyright">Copyright 2020.com, All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const pcNav = document.querySelector("#pc-nav");
+      const mobileNav = document.querySelector("#mobile-nav");
+
+      // Copy from PC nav -> Mobile nav
+      mobileNav.innerHTML = pcNav.innerHTML;
+    </script>
   </body>
 </html>
